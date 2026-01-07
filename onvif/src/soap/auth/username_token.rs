@@ -1,3 +1,5 @@
+use sha1::{Digest, Sha1};
+
 #[derive(Default, Debug, Clone)]
 pub struct UsernameToken {
     pub username: String,
@@ -31,9 +33,9 @@ impl UsernameToken {
         concat.extend_from_slice(password.as_bytes());
 
         let digest = {
-            let mut hasher = sha1::Sha1::new();
+            let mut hasher = Sha1::new();
             hasher.update(&concat);
-            hasher.digest().bytes()
+            hasher.finalize()
         };
 
         UsernameToken {
@@ -78,9 +80,9 @@ fn ws_username_token_example() {
     concat.extend_from_slice(password.as_bytes());
 
     let digest = {
-        let mut hasher = sha1::Sha1::new();
+        let mut hasher = Sha1::new();
         hasher.update(&concat);
-        hasher.digest().bytes()
+        hasher.finalize()
     };
 
     assert_eq!(

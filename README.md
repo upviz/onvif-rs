@@ -17,7 +17,7 @@ Cargo.toml:
 
 ```toml
 [dependencies]
-onvif = { git = "https://github.com/lumeohq/onvif-rs" }
+onvif = { git = "https://github.com/upviz/onvif-rs" }
 ```
 
 ## Troubleshooting
@@ -62,7 +62,7 @@ cargo run --example event
 
 ## Dependencies
 
-- XSD -> Rust code generation: [xsd-parser-rs](https://github.com/lumeohq/xsd-parser-rs)
+- XSD -> Rust code generation: [xsd-parser-rs](https://github.com/upviz/xsd-parser-rs)
 - XML (de)serialization: [yaserde](https://github.com/media-io/yaserde)
 
 ## Contributing

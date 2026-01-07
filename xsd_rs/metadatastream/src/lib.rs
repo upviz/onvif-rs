@@ -1,4 +1,5 @@
 #![allow(clippy::derive_partial_eq_without_eq)]
+#![allow(non_local_definitions)]
 #![allow(clippy::large_enum_variant)]
 
 use b_2 as wsnt;

@@ -1,3 +1,4 @@
+#![allow(non_local_definitions)]
 #![allow(clippy::derive_partial_eq_without_eq)]
 
 use validate::Validate;

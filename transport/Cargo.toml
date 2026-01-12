@@ -7,4 +7,4 @@ license = "MIT"
 [dependencies]
 async-trait = "0.1"
 thiserror = "1"
-yaserde = "0.7"
+yaserde = "0.12"

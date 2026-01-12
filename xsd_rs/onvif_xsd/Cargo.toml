@@ -14,5 +14,5 @@ xmlmime = { path = "../../xsd_rs/xmlmime" }
 xop = { path = "../../xsd_rs/xop" }
 xsd-macro-utils = { git = "https://github.com/upviz/xsd-parser-rs", rev = "7f3d433" }
 xsd-types = { git = "https://github.com/upviz/xsd-parser-rs", rev = "7f3d433" }
-yaserde = "0.7"
+yaserde = "0.12"
 yaserde_derive = "0.7"
